@@ -1,0 +1,8 @@
+# My design process
+
+The first CNN structure consists of a Rescaling Layer to normalize the input data from [0..255] to [0..1], a Convolution Layer with 32 filters, a MaxPooling Layer of 2x2, a Flatten Layer, a 128 units hidden layer with 20% dropout, and a NUM_CATEGORIES units output layer. This particular CNN structure achieved a loss of 0.1350 and accuracy of 0.9668.
+
+In second attempt, a tried to add more convolution layers and a additional hidden layer. It uses, again, rescaling layers to normalize images from [0..255] to [0..1], as well as two convolution layers with a 3x3 kernel size and 12 filters, and a 5x5 kernel size and 24 filters respectively, and two pooling layers with a 2x2 size. The data is then flattened and passed through two dense layers with 120 and 40 units respectively, with 20% dropout to reduce overfitting. Lastly, the output layer has all categories, and the model achieves a loss of 0.1114 and an accuracy of 0.9720. We have some improvement in the loss.
+
+Wow, after remove the second layer, we had good improvement. The final one is:
+It has two convolutional layers with 32 and 16 filters respectively, that use a 3x3 kernel to learn features from the input images. It also has two 2x2 Max Pooling layers for further feature extraction, a flatten layer for reshaping the data, a hidden layer with 128 units and 20% dropout for regularization, and an output layer with the number of categories for prediction. After training, this model achieved a loss of **0.1027** and an accuracy of **0.9762**.

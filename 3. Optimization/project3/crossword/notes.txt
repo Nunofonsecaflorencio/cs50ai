@@ -1,0 +1,20 @@
+Contraint Satisfaction Problem
+
+Variable: Each sequence of squeres
+Domain: Possible words will fill in that sequence
+
+Each Variable:
+    - begin row i
+    - begin col j
+    - direction (across or down)
+    - length
+
+Unary constraint: 
+    - length
+Binary constraint: 
+    - overlap with neighboring variables
+        character index in each variable’s word that must be the same character
+
+# all words must be different
+
+GOAL: find a satisfying assignment

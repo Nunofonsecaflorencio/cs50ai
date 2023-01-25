@@ -1,0 +1,37 @@
+https://diegomariano.com/metricas-de-avaliacao-em-machine-learning/
+
+,Revenue
+
+
+# The first six columns measure the different types of pages users have visited in the session
+Administrative          # How Many
+Administrative_Duration
+Informational           # How Many
+Informational_Duration
+ProductRelated          # How Many
+ProductRelated_Duration
+
+# Measure information from Google Analytics about the page the user visited
+BounceRates
+ExitRates
+PageValues
+
+
+SpecialDay # measures how close the date of the user’s session is to a special day (like Valentine’s Day or Mother’s Day)
+
+Month # is an abbreviation of the month the user visited
+
+
+# Are all integers describing information about the user themself
+OperatingSystems
+Browser
+Region
+TrafficType
+
+VisitorType # will take on the value "Returning_Visitor" for returning visitors and some other string value for non-returning visitors
+
+Weekend # is TRUE or FALSE depending on whether or not the user is visiting on a weekend
+
+
+# LABEL
+Revenue # indicates whether the user ultimately made a purchase or not: TRUE if they did, FALSE if they didn’t
